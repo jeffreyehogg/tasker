@@ -5,5 +5,6 @@ import { BoardsController } from './boards.controller';
 @Module({
   controllers: [BoardsController],
   providers: [BoardsService],
+  exports: [BoardsService],
 })
 export class BoardsModule {}
